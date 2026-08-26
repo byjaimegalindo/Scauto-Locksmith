@@ -5,47 +5,47 @@
 - Site: SC Auto Locksmith
 - Domain: https://www.cerrajeros-cerca24-7.com/
 - Wix site ID: `f5deb336-2519-4961-8fc3-2a178cd2b94e`
-- Currency: USD
+- Currency for future Wix-managed setup: USD
 
-## Current state
+## Current state — clean Wix start
 
-The Google Ads setup is now being centralized through the Wix Google Ads integration.
+The previously linked Google Ads account was explicitly removed at the user's request so the advertising setup can be rebuilt from Wix from zero.
 
 Actions completed through Wix on 2026-08-26:
 
-- Executed the current Wix Google Ads app installer endpoint successfully.
-- Detected and reused the Google Ads account already linked to this Wix site instead of creating a duplicate.
-- Account status returned by Wix: `ACTIVE`.
-- Currency returned by Wix: `USD`.
-- Payment status returned by Wix: `PENDING_PAYMENT`.
-- No campaign was launched and no advertising spend was activated in this step.
+- Read the Google Ads account currently linked to this Wix site.
+- Deleted the linked Wix Google Ads account mapping using the official Wix Google Ads Account API.
+- Removed Google Ads account ID `bdec9295-6353-4a7d-9c13-3d1e9ff78144` / Google customer ID `3274880107` from this Wix site's Google Ads setup.
+- The removed account had currency `USD`, account status `ACTIVE`, and payment status `PENDING_PAYMENT` at the time of removal.
+- Re-ran the Wix Google Ads installer after deletion. The integration is installed and ready for a new Wix-native account setup.
+- No replacement Google Ads account has been created yet.
+- No campaign exists from this reset operation.
+- No advertising spend was activated.
 
-## Important policy note
+## Intended next state
 
-Using Google Ads through Wix simplifies account and campaign management, but it does not remove Google policy requirements that apply to the advertised vertical.
+The project is intentionally parked in this state:
 
-Google's current Advanced Verification policy lists locksmith services in the United States and Canada as a category requiring Advanced Verification for Google Ads and Local Services advertisers.
+`NO_GOOGLE_ADS_ACCOUNT_LINKED_READY_FOR_NEW_WIX_ACCOUNT`
 
-Official references:
+The next paid-media session should begin inside Wix by creating a completely new Google Ads account from the Wix-managed flow in USD, then configuring billing, conversion actions, targeting, assets and the first PMAX Leads campaign.
 
-- https://support.google.com/google-ads/answer/7167922?hl=en
-- https://support.google.com/google-ads/answer/7167635?hl=en
+## Next Wix-native build sequence
 
-Do not attempt to bypass this requirement by changing the advertised category, business identity, destination, or service wording.
+1. Create a fresh Google Ads account from Wix in USD.
+2. Complete Wix/Google billing for that new account.
+3. Read the new account's conversion actions.
+4. Confirm the real operational geo area before spending.
+5. Generate/review PMAX Leads text assets and search themes.
+6. Use approved real business imagery.
+7. Obtain the live Google/Wix budget recommendation.
+8. Create the campaign as `PAUSED`.
+9. Review campaign assets, geo, conversions and daily budget.
+10. Launch only after explicit budget approval and any Google compliance requirements presented to the new account are satisfied.
 
-## Next Wix-native campaign build
+## Policy note
 
-Continue from the Wix Google Ads dashboard and API using the existing linked account:
-
-1. Resolve `PENDING_PAYMENT` / payment setup in Wix.
-2. Read available conversion actions.
-3. Confirm the real operational geo area before spending.
-4. Generate/review PMAX Leads text assets and search themes.
-5. Use approved real business imagery.
-6. Obtain the live Google/Wix budget recommendation.
-7. Create the campaign as `PAUSED`.
-8. Review campaign assets, geo, conversions and daily budget.
-9. Launch only after explicit budget approval and required Google compliance gates are satisfied.
+Using Google Ads through Wix simplifies account and campaign management, but it does not override Google policy requirements attached to the advertised vertical. If Google presents an advertiser/locksmith verification gate on the new Wix-created account, it must be completed rather than bypassed.
 
 ## Campaign strategy source
 
