@@ -1,7 +1,7 @@
 # Session Handoff — SC Auto Locksmith
 
 **Date:** 2026-08-26  
-**Purpose:** Exact checkpoint for resuming the Google Ads build from Wix in a later session without re-auditing the project.
+**Purpose:** Exact checkpoint for resuming the Google Ads build from Wix without re-auditing the project.
 
 ## Current project state
 
@@ -25,47 +25,47 @@ Completed and already deployed:
 
 Do **not** redo these items unless a later audit finds a real defect.
 
-## Google Ads reset completed
+## Google Ads reset + fresh Wix account
 
-The previous Google Ads account linked to the site was intentionally removed so the advertising setup can be rebuilt from Wix from zero.
+The previous Google Ads account linked to the site was intentionally removed and must not be reused:
 
-Removed Wix Google Ads account mapping:
+- Old Wix account ID: `bdec9295-6353-4a7d-9c13-3d1e9ff78144`
+- Old Google customer ID: `3274880107`
 
-- Wix account id: `bdec9295-6353-4a7d-9c13-3d1e9ff78144`
-- Google customer id: `3274880107`
+After the cleanup, the official Wix Google Ads integration remained installed and a completely new Google Ads account was created from Wix in USD.
 
-Final verified state after cleanup:
+Fresh account:
 
-`CLEAN_NO_ACCOUNT_LINKED_WIX_INTEGRATION_READY`
+- Wix Google Ads account ID: `db1bf8aa-42f8-4bf9-bad0-db98426cc00f`
+- Google customer ID: `5615631490`
+- Currency: `USD`
+- Account status returned immediately after creation: `UNSPECIFIED`
+- Payment status: `PENDING_PAYMENT`
 
-Meaning:
+No campaign has been created or launched. No advertising spend has been activated.
 
-- No Google Ads account is currently linked to this Wix site.
-- The official Wix Google Ads integration remains installed.
-- No replacement account has been created yet.
-- No campaign was launched.
-- No advertising spend was activated.
-- SEO, Analytics, Search Console, GTM, Google verification tags and unrelated integrations were intentionally left untouched.
+Current checkpoint:
+
+`FRESH_WIX_GOOGLE_ADS_ACCOUNT_CREATED_PENDING_PAYMENT`
 
 ## Exact next step when resuming
 
-Begin directly in Wix Google Ads setup. Do not reconnect or reuse the removed account.
+Complete billing/payment for the fresh Wix-created Google Ads account. Do not create another account and do not reconnect the deleted one.
 
-Sequence:
+Once payment is complete, continue in this order:
 
-1. Create a completely new Google Ads account from Wix in **USD**.
-2. Complete billing/payment setup for that new Wix-managed account.
-3. Read available conversion actions from the new account.
-4. Resolve the real operational geographic service area before spending.
-5. Build the first campaign as **PERFORMANCE_MAX_LEADS**.
-6. Primary landing: `https://www.cerrajeros-cerca24-7.com/automotriz`.
-7. Primary language: Spanish.
-8. Primary conversion priority: qualified phone calls, then booking/service requests, then qualified forms.
-9. Use real business imagery where possible.
-10. Generate/review text assets, search themes and the live Wix/Google budget recommendation.
-11. Create the campaign initially as **PAUSED**.
-12. Review geo, conversion goals, assets, final URL and daily budget.
-13. Launch only after budget approval and any Google compliance gate presented to the new account is satisfied.
+1. Read available conversion actions from the new account.
+2. Resolve the real operational geographic service area before spending.
+3. Build the first campaign as **PERFORMANCE_MAX_LEADS**.
+4. Primary landing: `https://www.cerrajeros-cerca24-7.com/automotriz`.
+5. Primary language: Spanish.
+6. Primary conversion priority: qualified phone calls, then booking/service requests, then qualified forms.
+7. Use real business imagery where possible.
+8. Generate/review text assets and search themes.
+9. Obtain the live Wix/Google budget recommendation.
+10. Create the campaign initially as **PAUSED**.
+11. Review geo, conversion goals, assets, final URL and daily budget.
+12. Launch only after explicit budget approval and any Google compliance gate presented to the new account is satisfied.
 
 ## Campaign strategy already defined
 
@@ -83,6 +83,7 @@ Supporting documents:
 ## Important operating rules
 
 - Do not reuse the deleted Google Ads account.
+- Do not create a second new account; the fresh Wix-created account now exists.
 - Do not activate spend before reviewing the live budget recommendation.
 - Do not invent a physical address or service coverage.
 - Do not alter URLs/slugs merely for Ads.
@@ -91,6 +92,4 @@ Supporting documents:
 
 ## Resume instruction
 
-If a new session starts, the fastest prompt is:
-
-> Retomemos SC Auto Locksmith desde `docs/SESSION-HANDOFF-2026-08-26.md`. Continúa directamente con la creación desde Wix de una nueva cuenta Google Ads en USD y luego monta la primera PMAX Leads según la estrategia documentada. No reutilices la cuenta anterior y no rehagas el SEO ya terminado.
+> Retomemos SC Auto Locksmith desde `docs/SESSION-HANDOFF-2026-08-26.md`. La cuenta nueva de Google Ads ya fue creada desde Wix en USD y está `PENDING_PAYMENT`. Continúa desde billing y luego monta la primera PMAX Leads según la estrategia documentada. No reutilices la cuenta anterior y no rehagas el SEO ya terminado.
