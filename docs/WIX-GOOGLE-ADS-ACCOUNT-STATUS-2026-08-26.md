@@ -5,43 +5,54 @@
 - Site: SC Auto Locksmith
 - Domain: https://www.cerrajeros-cerca24-7.com/
 - Wix site ID: `f5deb336-2519-4961-8fc3-2a178cd2b94e`
-- Currency for future Wix-managed setup: USD
+- Currency: USD
 
-## Current state — clean Wix start
+## Previous account reset
 
-The previously linked Google Ads account was explicitly removed at the user's request so the advertising setup can be rebuilt from Wix from zero.
+The previously linked Google Ads account was explicitly removed so the advertising setup could be rebuilt from Wix from zero.
 
-Actions completed through Wix on 2026-08-26:
+Removed account:
 
-- Read the Google Ads account currently linked to this Wix site.
-- Deleted the linked Wix Google Ads account mapping using the official Wix Google Ads Account API.
-- Removed Google Ads account ID `bdec9295-6353-4a7d-9c13-3d1e9ff78144` / Google customer ID `3274880107` from this Wix site's Google Ads setup.
-- The removed account had currency `USD`, account status `ACTIVE`, and payment status `PENDING_PAYMENT` at the time of removal.
-- Re-ran the Wix Google Ads installer after deletion. The integration is installed and ready for a new Wix-native account setup.
-- No replacement Google Ads account has been created yet.
-- No campaign exists from this reset operation.
-- No advertising spend was activated.
+- Wix Google Ads account ID: `bdec9295-6353-4a7d-9c13-3d1e9ff78144`
+- Google customer ID: `3274880107`
 
-## Intended next state
+Do not reconnect or reuse that account.
 
-The project is intentionally parked in this state:
+## Fresh Wix-created account — current state
 
-`NO_GOOGLE_ADS_ACCOUNT_LINKED_READY_FOR_NEW_WIX_ACCOUNT`
+On 2026-08-26 the Wix Google Ads integration was confirmed installed and Wix confirmed that no account was linked after the reset. A completely new Google Ads account was then created from Wix in USD.
 
-The next paid-media session should begin inside Wix by creating a completely new Google Ads account from the Wix-managed flow in USD, then configuring billing, conversion actions, targeting, assets and the first PMAX Leads campaign.
+New account:
+
+- Wix Google Ads account ID: `db1bf8aa-42f8-4bf9-bad0-db98426cc00f`
+- Google customer ID: `5615631490`
+- Currency: `USD`
+- Account status returned immediately after creation: `UNSPECIFIED`
+- Payment status: `PENDING_PAYMENT`
+
+No campaign has been created or launched from this new account yet. No advertising spend has been activated.
+
+## Current checkpoint
+
+`FRESH_WIX_GOOGLE_ADS_ACCOUNT_CREATED_PENDING_PAYMENT`
+
+The immediate next gate is the Wix/Google billing/payment flow for this newly created account. Once payment is completed, continue with conversion actions, real service geography, PMAX Leads assets/search themes, live budget recommendation and creation of the first campaign as `PAUSED`.
 
 ## Next Wix-native build sequence
 
-1. Create a fresh Google Ads account from Wix in USD.
-2. Complete Wix/Google billing for that new account.
-3. Read the new account's conversion actions.
-4. Confirm the real operational geo area before spending.
-5. Generate/review PMAX Leads text assets and search themes.
-6. Use approved real business imagery.
-7. Obtain the live Google/Wix budget recommendation.
-8. Create the campaign as `PAUSED`.
-9. Review campaign assets, geo, conversions and daily budget.
-10. Launch only after explicit budget approval and any Google compliance requirements presented to the new account are satisfied.
+1. Complete billing/payment setup for the new Wix-created account.
+2. Read available conversion actions.
+3. Confirm the real operational geo area before spending.
+4. Build the first campaign as `PERFORMANCE_MAX_LEADS`.
+5. Primary landing: `https://www.cerrajeros-cerca24-7.com/automotriz`.
+6. Primary language: Spanish.
+7. Prioritize qualified phone calls, then booking/service requests, then qualified forms.
+8. Use approved real business imagery where possible.
+9. Generate/review text assets and search themes.
+10. Obtain the live Wix/Google budget recommendation.
+11. Create the campaign initially as `PAUSED`.
+12. Review geo, conversion goals, assets, final URL and daily budget.
+13. Launch only after explicit budget approval and any Google compliance requirement shown to the new account is satisfied.
 
 ## Policy note
 
@@ -53,3 +64,4 @@ See:
 
 - `docs/GOOGLE-ADS-STRATEGY-2026-08-26.md`
 - `docs/GOOGLE-ADS-READINESS.md`
+- `docs/SESSION-HANDOFF-2026-08-26.md`
