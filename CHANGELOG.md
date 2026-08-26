@@ -73,6 +73,19 @@ Optimización de metadata y focus keywords para los 3 artículos existentes. Se 
 - Creado `docs/GOOGLE-ADS-STRATEGY-2026-08-26.md` como build sheet para la sesión de montaje.
 - No se activó gasto ni se inventó presupuesto de producción.
 
+### Google Ads — clean Wix reset
+
+- Por instrucción expresa del usuario, se eliminó la cuenta Google Ads previamente vinculada al sitio mediante la API oficial de Wix.
+- Cuenta Wix eliminada: `bdec9295-6353-4a7d-9c13-3d1e9ff78144`.
+- Google customer ID eliminado del setup Wix: `3274880107`.
+- La cuenta eliminada figuraba `ACTIVE`, moneda `USD` y payment status `PENDING_PAYMENT` al momento del reset.
+- Se ejecutó nuevamente el instalador oficial de Wix Google Ads después de la eliminación.
+- Se realizó comprobación final: **no existe ninguna cuenta Google Ads vinculada actualmente al sitio**.
+- Estado final documentado: `CLEAN_NO_ACCOUNT_LINKED_WIX_INTEGRATION_READY`.
+- Se mantiene instalada la integración de Wix para crear una nueva cuenta desde cero en la próxima sesión.
+- No se eliminaron ni modificaron SEO, Analytics, Search Console, GTM, tags ni otras integraciones no pertenecientes al reset de Google Ads.
+- No se creó una nueva cuenta y no se activó gasto publicitario.
+
 ### Nota de implementación
 
 La primera versión ampliada del JSON-LD de Home excedió el límite Wix de 4096 bytes por tag y fue rechazada antes de escribirse. Se compactó el graph a 2766 bytes manteniendo la semántica principal; la versión final fue aceptada con HTTP 200 y verificada posteriormente.
