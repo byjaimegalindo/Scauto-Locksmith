@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Locksmith",
+        "Organization"
+      ],
+      "@id": "https://www.cerrajeros-cerca24-7.com/#organization",
+      "name": "SC Auto Locksmith",
+      "alternateName": "Cerrajero Cerca 24/7",
+      "url": "https://www.cerrajeros-cerca24-7.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.cerrajeros-cerca24-7.com/#logo",
+        "url": "https://static.wixstatic.com/media/934707_266dbdf0431f402e8f9b442c2ba249f8~mv2.png"
+      },
+      "image": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#logo"
+      },
+      "telephone": "+16464077689",
+      "description": "Cerrajería móvil 24/7 para autos, hogares y negocios en New York.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "New York"
+      },
+      "knowsLanguage": "es",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61584968559259",
+        "https://www.instagram.com/scauto_locksmith/",
+        "https://www.tiktok.com/@scautolocksmith"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+16464077689",
+        "contactType": "customer service",
+        "areaServed": "US-NY",
+        "availableLanguage": "Spanish"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de cerrajería",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cerrajería residencial",
+              "serviceType": "Cerrajería residencial a domicilio",
+              "provider": {
+                "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+              },
+              "areaServed": "New York"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#service",
+              "name": "Cerrajería automotriz",
+              "url": "https://www.cerrajeros-cerca24-7.com/automotriz",
+              "provider": {
+                "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+              },
+              "areaServed": "New York"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cerrajería comercial",
+              "serviceType": "Cerrajería comercial a domicilio",
+              "provider": {
+                "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+              },
+              "areaServed": "New York"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.cerrajeros-cerca24-7.com/#website",
+      "url": "https://www.cerrajeros-cerca24-7.com/",
+      "name": "SC Auto Locksmith",
+      "publisher": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+      },
+      "inLanguage": "es-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.cerrajeros-cerca24-7.com/#webpage",
+      "url": "https://www.cerrajeros-cerca24-7.com/",
+      "name": "Cerrajero 24 Horas en New York | SC Auto Locksmith",
+      "description": "Cerrajero móvil 24/7 en New York para autos, hogares y negocios.",
+      "isPartOf": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#website"
+      },
+      "about": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+      },
+      "inLanguage": "es-US"
+    }
+  ]
+}
