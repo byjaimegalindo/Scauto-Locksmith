@@ -61,8 +61,17 @@ Optimización de metadata y focus keywords para los 3 artículos existentes. Se 
 - Auditado flujo Wix Google Ads.
 - Detectada ruta vigente de App Installer.
 - Documentado requisito de Google Advanced Verification para Locksmith Services en USA.
-- Preparada arquitectura `PERFORMANCE_MAX_LEADS`, search themes, negativos, assets, conversion hierarchy y flujo de launch.
-- No se activó gasto ni se inventó presupuesto.
+- Confirmado con documentación vigente de Wix que las nuevas campañas de leads creadas desde Google Ads con Wix usan **Performance Max Leads** y que las Smart campaigns nuevas ya no están disponibles.
+- Investigada y documentada estrategia de lanzamiento para primera campaña: `PMAX Leads | Auto Locksmith | ES | NYC`.
+- Landing primaria definida: `/automotriz`.
+- Llamadas definidas como conversión de mayor valor, seguidas de booking y formularios cualificados.
+- Preparados 10 search themes de alta intención para el límite actual de la UI de Wix.
+- Definido uso de call button con `+1 646 407 7689`; descartada estrategia call-only porque Google eliminó la creación de nuevos call-only ads en febrero de 2026.
+- Definida estrategia geo de cobertura real, evitando targeting de todo New York State sin justificación operativa.
+- Definidas reglas de learning window Day 0 / 7 / 14 / 28 y criterio de no fragmentar presupuesto en múltiples campañas al inicio.
+- Documentadas referencias oficiales Google/Wix y benchmark externo de home services únicamente como contexto de presupuesto, no como forecast.
+- Creado `docs/GOOGLE-ADS-STRATEGY-2026-08-26.md` como build sheet para la sesión de montaje.
+- No se activó gasto ni se inventó presupuesto de producción.
 
 ### Nota de implementación
 
