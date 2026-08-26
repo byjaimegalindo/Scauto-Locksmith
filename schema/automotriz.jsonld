@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#service",
+      "name": "Cerrajero automotriz en New York",
+      "serviceType": "Cerrajería automotriz",
+      "url": "https://www.cerrajeros-cerca24-7.com/automotriz",
+      "description": "Servicio móvil 24/7: apertura de autos, llaves, chip, smart keys y controles.",
+      "provider": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#organization"
+      },
+      "areaServed": "New York",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://www.cerrajeros-cerca24-7.com/automotriz",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+16464077689",
+          "contactType": "customer service"
+        }
+      },
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cerrajería automotriz",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apertura de autos sin daños"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reemplazo de llaves perdidas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Duplicado de llaves de auto"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Programación de llaves con chip"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Llaves inteligentes y controles remotos"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#webpage",
+      "url": "https://www.cerrajeros-cerca24-7.com/automotriz",
+      "name": "Cerrajero Automotriz 24/7 en New York | SC Auto Locksmith",
+      "isPartOf": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#service"
+      },
+      "breadcrumb": {
+        "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#breadcrumb"
+      },
+      "inLanguage": "es-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.cerrajeros-cerca24-7.com/automotriz#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.cerrajeros-cerca24-7.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cerrajería automotriz",
+          "item": "https://www.cerrajeros-cerca24-7.com/automotriz"
+        }
+      ]
+    }
+  ]
+}
