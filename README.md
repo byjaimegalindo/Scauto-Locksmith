@@ -46,11 +46,14 @@ La arquitectura queda preparada, pero **no debe considerarse una campaña autori
 
 La integración Wix Google Ads fue auditada y se identificó el endpoint actual de instalación, pero la instalación automática no se completó desde el entorno de esta sesión. Ver `docs/GOOGLE-ADS-READINESS.md`.
 
+La estrategia operativa investigada para el montaje de la primera campaña quedó cerrada en `docs/GOOGLE-ADS-STRATEGY-2026-08-26.md`: una primera **PMAX Leads** enfocada en cerrajería automotriz, landing `/automotriz`, campaña en español, llamadas como señal principal, 10 search themes de alta intención, geo restringido al área realmente atendida y aprendizaje inicial sin fragmentar presupuesto entre múltiples campañas.
+
 ## Documentación
 
 - `docs/BASELINE-AND-VERIFICATION.md` — estado encontrado, hallazgos y verificación post implementación.
 - `docs/SEO-GEO-LLM-IMPLEMENTATION.md` — matriz de cambios y decisiones técnicas.
 - `docs/GOOGLE-ADS-READINESS.md` — arquitectura de campaña, conversiones, compliance y checklist de lanzamiento.
+- `docs/GOOGLE-ADS-STRATEGY-2026-08-26.md` — estrategia investigada, build sheet y secuencia exacta de montaje para la primera campaña.
 - `schema/home.jsonld` — esquema desplegado en Home.
 - `schema/automotriz.jsonld` — esquema desplegado en la landing Automotriz.
 - `llms/authoritative-context.md` — bloque semántico añadido a `llms.txt`.
@@ -67,4 +70,4 @@ La integración Wix Google Ads fue auditada y se identificó el endpoint actual 
 
 ## Próximo gate de producción
 
-Completar **Google Advanced Verification para Locksmith (US)**, terminar la instalación/cuenta Google Ads en Wix, obtener recomendaciones de presupuesto/geo/assets desde la API de Wix/Google y crear primero la campaña en `PAUSED`. Solo después de aprobar un presupuesto diario concreto debe ejecutarse el launch.
+Completar **Google Advanced Verification para Locksmith (US)**, terminar la instalación/cuenta Google Ads en Wix, obtener recomendaciones de presupuesto/geo/assets desde Wix/Google y montar la primera campaña **PMAX Leads Automotive ES** según el build sheet del repositorio. La cifra de presupuesto se confirma durante el montaje con la recomendación viva de Wix/Google antes del launch.
